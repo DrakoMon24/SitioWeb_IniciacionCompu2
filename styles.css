@@ -1,0 +1,140 @@
+/* 1. RESET BÁSICO y Tipografía */
+body {
+    font-family: Arial, sans-serif; /* Fuente base */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo suave */
+    color: #333; /* Color de texto principal */
+}
+
+/* 2. ESTILOS DE CABECERA (Header y Nav) */
+header {
+    background-color: #6F4E37; /* Color de café oscuro */
+    color: white;
+    padding: 1em 2em;
+    display: flex; /* Para alinear el título y el menú */
+    justify-content: space-between; /* Espacio entre el título y el nav */
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Estilos de la lista del menú de navegación */
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Pone los elementos en línea */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Para una transición suave */
+}
+
+/* Estilo para el enlace activo y al pasar el mouse */
+nav ul li a:hover,
+nav ul li a.activo {
+    background-color: #9C7D55; /* Un tono más claro de café */
+}
+
+/* 3. ESTILOS DEL CONTENIDO PRINCIPAL (Main) */
+main {
+    padding: 20px;
+    max-width: 1000px; /* Limita el ancho del contenido central */
+    margin: 20px auto; /* Centra el contenido en la página */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las secciones */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 4. ESTILOS DE LA GALERÍA (quienes-somos.html) */
+.galeria {
+    display: grid; /* Sistema de rejilla para organizar las imágenes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas */
+    gap: 20px;
+}
+
+.galeria figure {
+    margin: 0;
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+    height: 200px; /* Altura fija para que se vean uniformes */
+}
+
+/* 5. ESTILOS DEL FORMULARIO (contacto.html) */
+.formulario-contacto {
+    max-width: 500px;
+    margin: 0 auto; /* Centra el formulario */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block; /* Pone la etiqueta sobre el campo */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+}
+
+.campo textarea {
+    resize: vertical; /* Permite al usuario solo cambiar la altura */
+}
+
+.boton-enviar {
+    background-color: #6F4E37;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    font-size: 1.1em;
+}
+
+.boton-enviar:hover {
+    background-color: #4b3424;
+}
+
+/* 6. ESTILOS DEL PIE DE PÁGINA (Footer) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}

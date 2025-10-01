@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Grano de Oro - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>El Grano de Oro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Nuestra Historia</a></li>
+                <li><a href="contacto.html" class="activo">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Estamos Listos para Escucharte</h2>
+        <p>Envíanos tus preguntas o sugerencias y te responderemos a la brevedad.</p>
+        
+        <form action="#" method="GET" class="formulario-contacto">
+            
+            <div class="campo">
+                <label for="nombre">Tu Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Tu Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Tu Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tus comentarios..."></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar Mensaje" class="boton-enviar">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Grano de Oro. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
